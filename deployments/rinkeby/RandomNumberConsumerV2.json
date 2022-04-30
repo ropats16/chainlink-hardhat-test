@@ -1,0 +1,215 @@
+{
+  "address": "0x12230f8411A9F6BD1E751f45b7B5160972c03143",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint64",
+          "name": "subscriptionId",
+          "type": "uint64"
+        },
+        {
+          "internalType": "address",
+          "name": "vrfCoordinator",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "link",
+          "type": "address"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "keyHash",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "have",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "want",
+          "type": "address"
+        }
+      ],
+      "name": "OnlyCoordinatorCanFulfill",
+      "type": "error"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "uint256[]",
+          "name": "randomWords",
+          "type": "uint256[]"
+        }
+      ],
+      "name": "ReturnedRandomness",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "requestId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256[]",
+          "name": "randomWords",
+          "type": "uint256[]"
+        }
+      ],
+      "name": "rawFulfillRandomWords",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "requestRandomWords",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "s_randomWords",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "s_requestId",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0x1205e2765bb229e5fc606aa761ebad2d03084392ee40d54009bb4209e02e27f6",
+  "receipt": {
+    "to": null,
+    "from": "0x8B4e20a9E627AC97068902e6B6Af4Dfb75596f84",
+    "contractAddress": "0x12230f8411A9F6BD1E751f45b7B5160972c03143",
+    "transactionIndex": 2,
+    "gasUsed": "586869",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0x068462033eff6cf952dfef64a7c2c16ca0e98085e115bca37aade9e2e5911783",
+    "transactionHash": "0x1205e2765bb229e5fc606aa761ebad2d03084392ee40d54009bb4209e02e27f6",
+    "logs": [],
+    "blockNumber": 10596275,
+    "cumulativeGasUsed": "629893",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [
+    "3297",
+    "0x6168499c0cFfCaCD319c818142124B7A15E857ab",
+    "0x01BE23585060835E02B77ef475b0Cc51aA1e0709",
+    "0xd89b2bf150e3b9e13446986e571fb9cab24b13cea0a43ea20a6049a85cc807cc"
+  ],
+  "numDeployments": 1,
+  "solcInputHash": "09e42b152c39ffe26f316664ac6fad60",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.7+commit.e28d00a7\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint64\",\"name\":\"subscriptionId\",\"type\":\"uint64\"},{\"internalType\":\"address\",\"name\":\"vrfCoordinator\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"link\",\"type\":\"address\"},{\"internalType\":\"bytes32\",\"name\":\"keyHash\",\"type\":\"bytes32\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"have\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"want\",\"type\":\"address\"}],\"name\":\"OnlyCoordinatorCanFulfill\",\"type\":\"error\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"uint256[]\",\"name\":\"randomWords\",\"type\":\"uint256[]\"}],\"name\":\"ReturnedRandomness\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"requestId\",\"type\":\"uint256\"},{\"internalType\":\"uint256[]\",\"name\":\"randomWords\",\"type\":\"uint256[]\"}],\"name\":\"rawFulfillRandomWords\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"requestRandomWords\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"s_randomWords\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"s_requestId\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"constructor\":{\"params\":{\"keyHash\":\"- the gas lane to use, which specifies the maximum gas price to bump to\",\"subscriptionId\":\"- the subscription ID that this contract uses for funding requests\",\"vrfCoordinator\":\"- coordinator, check https://docs.chain.link/docs/vrf-contracts/#configurations\"}}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"constructor\":{\"notice\":\"Constructor inherits VRFConsumerBaseV2\"},\"requestRandomWords()\":{\"notice\":\"Requests randomness Assumes the subscription is funded sufficiently; \\\"Words\\\" refers to unit of data in Computer Science\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/RandomNumberConsumerV2.sol\":\"RandomNumberConsumerV2\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"@chainlink/contracts/src/v0.8/VRFConsumerBaseV2.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity ^0.8.0;\\n\\n/** ****************************************************************************\\n * @notice Interface for contracts using VRF randomness\\n * *****************************************************************************\\n * @dev PURPOSE\\n *\\n * @dev Reggie the Random Oracle (not his real job) wants to provide randomness\\n * @dev to Vera the verifier in such a way that Vera can be sure he's not\\n * @dev making his output up to suit himself. Reggie provides Vera a public key\\n * @dev to which he knows the secret key. Each time Vera provides a seed to\\n * @dev Reggie, he gives back a value which is computed completely\\n * @dev deterministically from the seed and the secret key.\\n *\\n * @dev Reggie provides a proof by which Vera can verify that the output was\\n * @dev correctly computed once Reggie tells it to her, but without that proof,\\n * @dev the output is indistinguishable to her from a uniform random sample\\n * @dev from the output space.\\n *\\n * @dev The purpose of this contract is to make it easy for unrelated contracts\\n * @dev to talk to Vera the verifier about the work Reggie is doing, to provide\\n * @dev simple access to a verifiable source of randomness. It ensures 2 things:\\n * @dev 1. The fulfillment came from the VRFCoordinator\\n * @dev 2. The consumer contract implements fulfillRandomWords.\\n * *****************************************************************************\\n * @dev USAGE\\n *\\n * @dev Calling contracts must inherit from VRFConsumerBase, and can\\n * @dev initialize VRFConsumerBase's attributes in their constructor as\\n * @dev shown:\\n *\\n * @dev   contract VRFConsumer {\\n * @dev     constructor(<other arguments>, address _vrfCoordinator, address _link)\\n * @dev       VRFConsumerBase(_vrfCoordinator) public {\\n * @dev         <initialization with other arguments goes here>\\n * @dev       }\\n * @dev   }\\n *\\n * @dev The oracle will have given you an ID for the VRF keypair they have\\n * @dev committed to (let's call it keyHash). Create subscription, fund it\\n * @dev and your consumer contract as a consumer of it (see VRFCoordinatorInterface\\n * @dev subscription management functions).\\n * @dev Call requestRandomWords(keyHash, subId, minimumRequestConfirmations,\\n * @dev callbackGasLimit, numWords),\\n * @dev see (VRFCoordinatorInterface for a description of the arguments).\\n *\\n * @dev Once the VRFCoordinator has received and validated the oracle's response\\n * @dev to your request, it will call your contract's fulfillRandomWords method.\\n *\\n * @dev The randomness argument to fulfillRandomWords is a set of random words\\n * @dev generated from your requestId and the blockHash of the request.\\n *\\n * @dev If your contract could have concurrent requests open, you can use the\\n * @dev requestId returned from requestRandomWords to track which response is associated\\n * @dev with which randomness request.\\n * @dev See \\\"SECURITY CONSIDERATIONS\\\" for principles to keep in mind,\\n * @dev if your contract could have multiple requests in flight simultaneously.\\n *\\n * @dev Colliding `requestId`s are cryptographically impossible as long as seeds\\n * @dev differ.\\n *\\n * *****************************************************************************\\n * @dev SECURITY CONSIDERATIONS\\n *\\n * @dev A method with the ability to call your fulfillRandomness method directly\\n * @dev could spoof a VRF response with any random value, so it's critical that\\n * @dev it cannot be directly called by anything other than this base contract\\n * @dev (specifically, by the VRFConsumerBase.rawFulfillRandomness method).\\n *\\n * @dev For your users to trust that your contract's random behavior is free\\n * @dev from malicious interference, it's best if you can write it so that all\\n * @dev behaviors implied by a VRF response are executed *during* your\\n * @dev fulfillRandomness method. If your contract must store the response (or\\n * @dev anything derived from it) and use it later, you must ensure that any\\n * @dev user-significant behavior which depends on that stored value cannot be\\n * @dev manipulated by a subsequent VRF request.\\n *\\n * @dev Similarly, both miners and the VRF oracle itself have some influence\\n * @dev over the order in which VRF responses appear on the blockchain, so if\\n * @dev your contract could have multiple VRF requests in flight simultaneously,\\n * @dev you must ensure that the order in which the VRF responses arrive cannot\\n * @dev be used to manipulate your contract's user-significant behavior.\\n *\\n * @dev Since the block hash of the block which contains the requestRandomness\\n * @dev call is mixed into the input to the VRF *last*, a sufficiently powerful\\n * @dev miner could, in principle, fork the blockchain to evict the block\\n * @dev containing the request, forcing the request to be included in a\\n * @dev different block with a different hash, and therefore a different input\\n * @dev to the VRF. However, such an attack would incur a substantial economic\\n * @dev cost. This cost scales with the number of blocks the VRF oracle waits\\n * @dev until it calls responds to a request. It is for this reason that\\n * @dev that you can signal to an oracle you'd like them to wait longer before\\n * @dev responding to the request (however this is not enforced in the contract\\n * @dev and so remains effective only in the case of unmodified oracle software).\\n */\\nabstract contract VRFConsumerBaseV2 {\\n  error OnlyCoordinatorCanFulfill(address have, address want);\\n  address private immutable vrfCoordinator;\\n\\n  /**\\n   * @param _vrfCoordinator address of VRFCoordinator contract\\n   */\\n  constructor(address _vrfCoordinator) {\\n    vrfCoordinator = _vrfCoordinator;\\n  }\\n\\n  /**\\n   * @notice fulfillRandomness handles the VRF response. Your contract must\\n   * @notice implement it. See \\\"SECURITY CONSIDERATIONS\\\" above for important\\n   * @notice principles to keep in mind when implementing your fulfillRandomness\\n   * @notice method.\\n   *\\n   * @dev VRFConsumerBaseV2 expects its subcontracts to have a method with this\\n   * @dev signature, and will call it once it has verified the proof\\n   * @dev associated with the randomness. (It is triggered via a call to\\n   * @dev rawFulfillRandomness, below.)\\n   *\\n   * @param requestId The Id initially returned by requestRandomness\\n   * @param randomWords the VRF output expanded to the requested number of words\\n   */\\n  function fulfillRandomWords(uint256 requestId, uint256[] memory randomWords) internal virtual;\\n\\n  // rawFulfillRandomness is called by VRFCoordinator when it receives a valid VRF\\n  // proof. rawFulfillRandomness then calls fulfillRandomness, after validating\\n  // the origin of the call\\n  function rawFulfillRandomWords(uint256 requestId, uint256[] memory randomWords) external {\\n    if (msg.sender != vrfCoordinator) {\\n      revert OnlyCoordinatorCanFulfill(msg.sender, vrfCoordinator);\\n    }\\n    fulfillRandomWords(requestId, randomWords);\\n  }\\n}\\n\",\"keccak256\":\"0xec8b7e3032e887dd0732d2a5f8552ddce64a99a81b0008ef0bcf6cad68a535fc\",\"license\":\"MIT\"},\"@chainlink/contracts/src/v0.8/interfaces/LinkTokenInterface.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity ^0.8.0;\\n\\ninterface LinkTokenInterface {\\n  function allowance(address owner, address spender) external view returns (uint256 remaining);\\n\\n  function approve(address spender, uint256 value) external returns (bool success);\\n\\n  function balanceOf(address owner) external view returns (uint256 balance);\\n\\n  function decimals() external view returns (uint8 decimalPlaces);\\n\\n  function decreaseApproval(address spender, uint256 addedValue) external returns (bool success);\\n\\n  function increaseApproval(address spender, uint256 subtractedValue) external;\\n\\n  function name() external view returns (string memory tokenName);\\n\\n  function symbol() external view returns (string memory tokenSymbol);\\n\\n  function totalSupply() external view returns (uint256 totalTokensIssued);\\n\\n  function transfer(address to, uint256 value) external returns (bool success);\\n\\n  function transferAndCall(\\n    address to,\\n    uint256 value,\\n    bytes calldata data\\n  ) external returns (bool success);\\n\\n  function transferFrom(\\n    address from,\\n    address to,\\n    uint256 value\\n  ) external returns (bool success);\\n}\\n\",\"keccak256\":\"0xc7d7cd730d36825485ef4107d93c3ff18b9f3a5a00ea3d5988ba9a0bd70b10c5\",\"license\":\"MIT\"},\"@chainlink/contracts/src/v0.8/interfaces/VRFCoordinatorV2Interface.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity ^0.8.0;\\n\\ninterface VRFCoordinatorV2Interface {\\n  /**\\n   * @notice Get configuration relevant for making requests\\n   * @return minimumRequestConfirmations global min for request confirmations\\n   * @return maxGasLimit global max for request gas limit\\n   * @return s_provingKeyHashes list of registered key hashes\\n   */\\n  function getRequestConfig()\\n    external\\n    view\\n    returns (\\n      uint16,\\n      uint32,\\n      bytes32[] memory\\n    );\\n\\n  /**\\n   * @notice Request a set of random words.\\n   * @param keyHash - Corresponds to a particular oracle job which uses\\n   * that key for generating the VRF proof. Different keyHash's have different gas price\\n   * ceilings, so you can select a specific one to bound your maximum per request cost.\\n   * @param subId  - The ID of the VRF subscription. Must be funded\\n   * with the minimum subscription balance required for the selected keyHash.\\n   * @param minimumRequestConfirmations - How many blocks you'd like the\\n   * oracle to wait before responding to the request. See SECURITY CONSIDERATIONS\\n   * for why you may want to request more. The acceptable range is\\n   * [minimumRequestBlockConfirmations, 200].\\n   * @param callbackGasLimit - How much gas you'd like to receive in your\\n   * fulfillRandomWords callback. Note that gasleft() inside fulfillRandomWords\\n   * may be slightly less than this amount because of gas used calling the function\\n   * (argument decoding etc.), so you may need to request slightly more than you expect\\n   * to have inside fulfillRandomWords. The acceptable range is\\n   * [0, maxGasLimit]\\n   * @param numWords - The number of uint256 random values you'd like to receive\\n   * in your fulfillRandomWords callback. Note these numbers are expanded in a\\n   * secure way by the VRFCoordinator from a single random value supplied by the oracle.\\n   * @return requestId - A unique identifier of the request. Can be used to match\\n   * a request to a response in fulfillRandomWords.\\n   */\\n  function requestRandomWords(\\n    bytes32 keyHash,\\n    uint64 subId,\\n    uint16 minimumRequestConfirmations,\\n    uint32 callbackGasLimit,\\n    uint32 numWords\\n  ) external returns (uint256 requestId);\\n\\n  /**\\n   * @notice Create a VRF subscription.\\n   * @return subId - A unique subscription id.\\n   * @dev You can manage the consumer set dynamically with addConsumer/removeConsumer.\\n   * @dev Note to fund the subscription, use transferAndCall. For example\\n   * @dev  LINKTOKEN.transferAndCall(\\n   * @dev    address(COORDINATOR),\\n   * @dev    amount,\\n   * @dev    abi.encode(subId));\\n   */\\n  function createSubscription() external returns (uint64 subId);\\n\\n  /**\\n   * @notice Get a VRF subscription.\\n   * @param subId - ID of the subscription\\n   * @return balance - LINK balance of the subscription in juels.\\n   * @return reqCount - number of requests for this subscription, determines fee tier.\\n   * @return owner - owner of the subscription.\\n   * @return consumers - list of consumer address which are able to use this subscription.\\n   */\\n  function getSubscription(uint64 subId)\\n    external\\n    view\\n    returns (\\n      uint96 balance,\\n      uint64 reqCount,\\n      address owner,\\n      address[] memory consumers\\n    );\\n\\n  /**\\n   * @notice Request subscription owner transfer.\\n   * @param subId - ID of the subscription\\n   * @param newOwner - proposed new owner of the subscription\\n   */\\n  function requestSubscriptionOwnerTransfer(uint64 subId, address newOwner) external;\\n\\n  /**\\n   * @notice Request subscription owner transfer.\\n   * @param subId - ID of the subscription\\n   * @dev will revert if original owner of subId has\\n   * not requested that msg.sender become the new owner.\\n   */\\n  function acceptSubscriptionOwnerTransfer(uint64 subId) external;\\n\\n  /**\\n   * @notice Add a consumer to a VRF subscription.\\n   * @param subId - ID of the subscription\\n   * @param consumer - New consumer which can use the subscription\\n   */\\n  function addConsumer(uint64 subId, address consumer) external;\\n\\n  /**\\n   * @notice Remove a consumer from a VRF subscription.\\n   * @param subId - ID of the subscription\\n   * @param consumer - Consumer to remove from the subscription\\n   */\\n  function removeConsumer(uint64 subId, address consumer) external;\\n\\n  /**\\n   * @notice Cancel a subscription\\n   * @param subId - ID of the subscription\\n   * @param to - Where to send the remaining LINK to\\n   */\\n  function cancelSubscription(uint64 subId, address to) external;\\n}\\n\",\"keccak256\":\"0xcb29ee50ee2b05441e4deebf8b4756a0feec4f5497e36b6a1ca320f7ce561802\",\"license\":\"MIT\"},\"contracts/RandomNumberConsumerV2.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\r\\n// An example of a consumer contract that relies on a subscription for funding.\\r\\npragma solidity ^0.8.7;\\r\\n\\r\\n//importing supporting contracts for RandomNumberConsumerV2\\r\\nimport \\\"@chainlink/contracts/src/v0.8/interfaces/LinkTokenInterface.sol\\\";\\r\\nimport \\\"@chainlink/contracts/src/v0.8/interfaces/VRFCoordinatorV2Interface.sol\\\";\\r\\nimport \\\"@chainlink/contracts/src/v0.8/VRFConsumerBaseV2.sol\\\";\\r\\n\\r\\n//inheriting code from VRFConsumerBase import\\r\\ncontract RandomNumberConsumerV2 is VRFConsumerBaseV2 {\\r\\n\\r\\n  //Interface for VRF Coordinator that verifies the numbers returned are actually random\\r\\n  VRFCoordinatorV2Interface immutable COORDINATOR;\\r\\n\\r\\n  //Interface for the Link Token\\r\\n  LinkTokenInterface immutable LINKTOKEN;\\r\\n\\r\\n  //Your subscription ID from earlier (Hint: Subscription Manager)\\r\\n  uint64 immutable s_subscriptionId;\\r\\n\\r\\n  // The gas lane to use, which specifies the maximum gas price to bump to.\\r\\n  // For a list of available gas lanes on each network,\\r\\n  // see https://docs.chain.link/docs/vrf-contracts/#configurations\\r\\n  //keyHash used to determine which Chainlink Oracle to use to get a random number\\r\\n  bytes32 immutable s_keyHash;\\r\\n\\r\\n  // Depends on the number of requested values that you want sent to the\\r\\n  // fulfillRandomWords() function. Storing each word costs about 20,000 gas,\\r\\n  // so 100,000 is a safe default for this example contract. Test and adjust\\r\\n  // this limit based on the network that you select, the size of the request,\\r\\n  // and the processing of the callback request in the fulfillRandomWords()\\r\\n  // function.\\r\\n  uint32 immutable s_callbackGasLimit = 100000;\\r\\n\\r\\n  // The default is 3, but you can set this higher.\\r\\n  uint16 immutable s_requestConfirmations = 3;\\r\\n\\r\\n  // For this example, retrieve 2 random values in one request.\\r\\n  // Cannot exceed VRFCoordinatorV2.MAX_NUM_WORDS.\\r\\n  uint32 immutable s_numWords = 2;\\r\\n\\r\\n  //Array for storing the received random values\\r\\n  uint256[] public s_randomWords;\\r\\n\\r\\n  //request Id for requesting random values\\r\\n  //request Id ensures you get your random values and not someone else's\\r\\n  uint256 public s_requestId;\\r\\n\\r\\n  //address variable\\r\\n  address s_owner;\\r\\n\\r\\n  //event to return the array of random words\\r\\n  event ReturnedRandomness(uint256[] randomWords);\\r\\n\\r\\n  /**\\r\\n   * @notice Constructor inherits VRFConsumerBaseV2\\r\\n   *\\r\\n   * @param subscriptionId - the subscription ID that this contract uses for funding requests\\r\\n   * @param vrfCoordinator - coordinator, check https://docs.chain.link/docs/vrf-contracts/#configurations\\r\\n   * @param keyHash - the gas lane to use, which specifies the maximum gas price to bump to\\r\\n   */\\r\\n   //constructor is function called when smart contract is deployed\\r\\n  //we must pass the VRFConsumerBase constructor since we are inheriting that contract also\\r\\n  constructor(\\r\\n    uint64 subscriptionId,\\r\\n    address vrfCoordinator,\\r\\n    address link,\\r\\n    bytes32 keyHash\\r\\n  ) VRFConsumerBaseV2(vrfCoordinator) {\\r\\n    COORDINATOR = VRFCoordinatorV2Interface(vrfCoordinator);\\r\\n    LINKTOKEN = LinkTokenInterface(link);\\r\\n    s_keyHash = keyHash;\\r\\n    s_owner = msg.sender;\\r\\n    s_subscriptionId = subscriptionId;\\r\\n  }\\r\\n\\r\\n  /**\\r\\n   * @notice Requests randomness\\r\\n   * Assumes the subscription is funded sufficiently; \\\"Words\\\" refers to unit of data in Computer Science\\r\\n   */\\r\\n   //function to request the random values\\r\\n  //onlyOwner modifier ensures that only contract owner can call this\\r\\n  function requestRandomWords() external onlyOwner {\\r\\n    // Will revert if subscription is not set and funded.\\r\\n    //Please make sure you have funds in subscription\\r\\n    s_requestId = COORDINATOR.requestRandomWords(\\r\\n      s_keyHash,\\r\\n      s_subscriptionId,\\r\\n      s_requestConfirmations,\\r\\n      s_callbackGasLimit,\\r\\n      s_numWords\\r\\n    );\\r\\n  }\\r\\n\\r\\n  /**\\r\\n   * @notice Callback function used by VRF Coordinator\\r\\n   *\\r\\n   * @param requestId - id of the request\\r\\n   * @param randomWords - array of random results from VRF Coordinator\\r\\n   */\\r\\n   //Callback function used by VRF Coordinator\\r\\n  function fulfillRandomWords(uint256 requestId, uint256[] memory randomWords) internal override {\\r\\n    s_randomWords = randomWords;\\r\\n    emit ReturnedRandomness(randomWords);\\r\\n  }\\r\\n\\r\\n  //checks if contract owner is the one calling a transaction\\r\\n  modifier onlyOwner() {\\r\\n    require(msg.sender == s_owner);\\r\\n    _;\\r\\n  }\\r\\n}\",\"keccak256\":\"0xa36143a0e6a5dfa4b9faee9d4373653a51895fc30082e101fbd818f07b97d29c\",\"license\":\"MIT\"}},\"version\":1}",
+  "bytecode": "0x610180604052620186a063ffffffff166101209063ffffffff1660e01b815250600361ffff166101409061ffff1660f01b815250600263ffffffff166101609063ffffffff1660e01b8152503480156200005857600080fd5b5060405162000c7c38038062000c7c83398181016040528101906200007e9190620001dd565b828073ffffffffffffffffffffffffffffffffffffffff1660808173ffffffffffffffffffffffffffffffffffffffff1660601b81525050508273ffffffffffffffffffffffffffffffffffffffff1660a08173ffffffffffffffffffffffffffffffffffffffff1660601b815250508173ffffffffffffffffffffffffffffffffffffffff1660c08173ffffffffffffffffffffffffffffffffffffffff1660601b8152505080610100818152505033600260006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055508367ffffffffffffffff1660e08167ffffffffffffffff1660c01b8152505050505050620002f4565b600081519050620001a981620002a6565b92915050565b600081519050620001c081620002c0565b92915050565b600081519050620001d781620002da565b92915050565b60008060008060808587031215620001fa57620001f9620002a1565b5b60006200020a87828801620001c6565b94505060206200021d8782880162000198565b9350506040620002308782880162000198565b92505060606200024387828801620001af565b91505092959194509250565b60006200025c826200026d565b9050919050565b6000819050919050565b600073ffffffffffffffffffffffffffffffffffffffff82169050919050565b600067ffffffffffffffff82169050919050565b600080fd5b620002b1816200024f565b8114620002bd57600080fd5b50565b620002cb8162000263565b8114620002d757600080fd5b50565b620002e5816200028d565b8114620002f157600080fd5b50565b60805160601c60a05160601c60c05160601c60e05160c01c610100516101205160e01c6101405160f01c6101605160e01c61090a6200037260003960006102a10152600061025f015260006102800152600061021d0152600061023e01526000505060006101e101526000818160c7015261011b015261090a6000f3fe608060405234801561001057600080fd5b506004361061004c5760003560e01c80631fe543e314610051578063e0c862891461006d578063e89e106a14610077578063f6eaffc814610095575b600080fd5b61006b60048036038101906100669190610542565b6100c5565b005b610075610185565b005b61007f61033a565b60405161008c919061071b565b60405180910390f35b6100af60048036038101906100aa91906104e8565b610340565b6040516100bc919061071b565b60405180910390f35b7f000000000000000000000000000000000000000000000000000000000000000073ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff161461017757337f00000000000000000000000000000000000000000000000000000000000000006040517f1cf993f400000000000000000000000000000000000000000000000000000000815260040161016e92919061067d565b60405180910390fd5b6101818282610364565b5050565b600260009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16146101df57600080fd5b7f000000000000000000000000000000000000000000000000000000000000000073ffffffffffffffffffffffffffffffffffffffff16635d3b1d307f00000000000000000000000000000000000000000000000000000000000000007f00000000000000000000000000000000000000000000000000000000000000007f00000000000000000000000000000000000000000000000000000000000000007f00000000000000000000000000000000000000000000000000000000000000007f00000000000000000000000000000000000000000000000000000000000000006040518663ffffffff1660e01b81526004016102e09594939291906106c8565b602060405180830381600087803b1580156102fa57600080fd5b505af115801561030e573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906103329190610515565b600181905550565b60015481565b6000818154811061035057600080fd5b906000526020600020016000915090505481565b806000908051906020019061037a9291906103b6565b507fefb16d61046900da527008568620fb9f8420e2f5ed4de3bfbded5035c9362b0e816040516103aa91906106a6565b60405180910390a15050565b8280548282559060005260206000209081019282156103f2579160200282015b828111156103f15782518255916020019190600101906103d6565b5b5090506103ff9190610403565b5090565b5b8082111561041c576000816000905550600101610404565b5090565b600061043361042e8461075b565b610736565b905080838252602082019050828560208602820111156104565761045561089d565b5b60005b85811015610486578161046c88826104be565b845260208401935060208301925050600181019050610459565b5050509392505050565b600082601f8301126104a5576104a4610898565b5b81356104b5848260208601610420565b91505092915050565b6000813590506104cd816108bd565b92915050565b6000815190506104e2816108bd565b92915050565b6000602082840312156104fe576104fd6108a7565b5b600061050c848285016104be565b91505092915050565b60006020828403121561052b5761052a6108a7565b5b6000610539848285016104d3565b91505092915050565b60008060408385031215610559576105586108a7565b5b6000610567858286016104be565b925050602083013567ffffffffffffffff811115610588576105876108a2565b5b61059485828601610490565b9150509250929050565b60006105aa8383610641565b60208301905092915050565b6105bf816107c0565b82525050565b60006105d082610797565b6105da81856107af565b93506105e583610787565b8060005b838110156106165781516105fd888261059e565b9750610608836107a2565b9250506001810190506105e9565b5085935050505092915050565b61062c816107d2565b82525050565b61063b816107dc565b82525050565b61064a8161080a565b82525050565b6106598161080a565b82525050565b61066881610814565b82525050565b61067781610824565b82525050565b600060408201905061069260008301856105b6565b61069f60208301846105b6565b9392505050565b600060208201905081810360008301526106c081846105c5565b905092915050565b600060a0820190506106dd6000830188610623565b6106ea602083018761066e565b6106f76040830186610632565b610704606083018561065f565b610711608083018461065f565b9695505050505050565b60006020820190506107306000830184610650565b92915050565b6000610740610751565b905061074c8282610838565b919050565b6000604051905090565b600067ffffffffffffffff82111561077657610775610869565b5b602082029050602081019050919050565b6000819050602082019050919050565b600081519050919050565b6000602082019050919050565b600082825260208201905092915050565b60006107cb826107ea565b9050919050565b6000819050919050565b600061ffff82169050919050565b600073ffffffffffffffffffffffffffffffffffffffff82169050919050565b6000819050919050565b600063ffffffff82169050919050565b600067ffffffffffffffff82169050919050565b610841826108ac565b810181811067ffffffffffffffff821117156108605761085f610869565b5b80604052505050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052604160045260246000fd5b600080fd5b600080fd5b600080fd5b600080fd5b6000601f19601f8301169050919050565b6108c68161080a565b81146108d157600080fd5b5056fea2646970667358221220a7c54fa6b297430b3d4b06d4aff3012484fd575d8ba6c39992653cb6e75d522e64736f6c63430008070033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b506004361061004c5760003560e01c80631fe543e314610051578063e0c862891461006d578063e89e106a14610077578063f6eaffc814610095575b600080fd5b61006b60048036038101906100669190610542565b6100c5565b005b610075610185565b005b61007f61033a565b60405161008c919061071b565b60405180910390f35b6100af60048036038101906100aa91906104e8565b610340565b6040516100bc919061071b565b60405180910390f35b7f000000000000000000000000000000000000000000000000000000000000000073ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff161461017757337f00000000000000000000000000000000000000000000000000000000000000006040517f1cf993f400000000000000000000000000000000000000000000000000000000815260040161016e92919061067d565b60405180910390fd5b6101818282610364565b5050565b600260009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16146101df57600080fd5b7f000000000000000000000000000000000000000000000000000000000000000073ffffffffffffffffffffffffffffffffffffffff16635d3b1d307f00000000000000000000000000000000000000000000000000000000000000007f00000000000000000000000000000000000000000000000000000000000000007f00000000000000000000000000000000000000000000000000000000000000007f00000000000000000000000000000000000000000000000000000000000000007f00000000000000000000000000000000000000000000000000000000000000006040518663ffffffff1660e01b81526004016102e09594939291906106c8565b602060405180830381600087803b1580156102fa57600080fd5b505af115801561030e573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906103329190610515565b600181905550565b60015481565b6000818154811061035057600080fd5b906000526020600020016000915090505481565b806000908051906020019061037a9291906103b6565b507fefb16d61046900da527008568620fb9f8420e2f5ed4de3bfbded5035c9362b0e816040516103aa91906106a6565b60405180910390a15050565b8280548282559060005260206000209081019282156103f2579160200282015b828111156103f15782518255916020019190600101906103d6565b5b5090506103ff9190610403565b5090565b5b8082111561041c576000816000905550600101610404565b5090565b600061043361042e8461075b565b610736565b905080838252602082019050828560208602820111156104565761045561089d565b5b60005b85811015610486578161046c88826104be565b845260208401935060208301925050600181019050610459565b5050509392505050565b600082601f8301126104a5576104a4610898565b5b81356104b5848260208601610420565b91505092915050565b6000813590506104cd816108bd565b92915050565b6000815190506104e2816108bd565b92915050565b6000602082840312156104fe576104fd6108a7565b5b600061050c848285016104be565b91505092915050565b60006020828403121561052b5761052a6108a7565b5b6000610539848285016104d3565b91505092915050565b60008060408385031215610559576105586108a7565b5b6000610567858286016104be565b925050602083013567ffffffffffffffff811115610588576105876108a2565b5b61059485828601610490565b9150509250929050565b60006105aa8383610641565b60208301905092915050565b6105bf816107c0565b82525050565b60006105d082610797565b6105da81856107af565b93506105e583610787565b8060005b838110156106165781516105fd888261059e565b9750610608836107a2565b9250506001810190506105e9565b5085935050505092915050565b61062c816107d2565b82525050565b61063b816107dc565b82525050565b61064a8161080a565b82525050565b6106598161080a565b82525050565b61066881610814565b82525050565b61067781610824565b82525050565b600060408201905061069260008301856105b6565b61069f60208301846105b6565b9392505050565b600060208201905081810360008301526106c081846105c5565b905092915050565b600060a0820190506106dd6000830188610623565b6106ea602083018761066e565b6106f76040830186610632565b610704606083018561065f565b610711608083018461065f565b9695505050505050565b60006020820190506107306000830184610650565b92915050565b6000610740610751565b905061074c8282610838565b919050565b6000604051905090565b600067ffffffffffffffff82111561077657610775610869565b5b602082029050602081019050919050565b6000819050602082019050919050565b600081519050919050565b6000602082019050919050565b600082825260208201905092915050565b60006107cb826107ea565b9050919050565b6000819050919050565b600061ffff82169050919050565b600073ffffffffffffffffffffffffffffffffffffffff82169050919050565b6000819050919050565b600063ffffffff82169050919050565b600067ffffffffffffffff82169050919050565b610841826108ac565b810181811067ffffffffffffffff821117156108605761085f610869565b5b80604052505050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052604160045260246000fd5b600080fd5b600080fd5b600080fd5b600080fd5b6000601f19601f8301169050919050565b6108c68161080a565b81146108d157600080fd5b5056fea2646970667358221220a7c54fa6b297430b3d4b06d4aff3012484fd575d8ba6c39992653cb6e75d522e64736f6c63430008070033",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {
+      "constructor": {
+        "params": {
+          "keyHash": "- the gas lane to use, which specifies the maximum gas price to bump to",
+          "subscriptionId": "- the subscription ID that this contract uses for funding requests",
+          "vrfCoordinator": "- coordinator, check https://docs.chain.link/docs/vrf-contracts/#configurations"
+        }
+      }
+    },
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {
+      "constructor": {
+        "notice": "Constructor inherits VRFConsumerBaseV2"
+      },
+      "requestRandomWords()": {
+        "notice": "Requests randomness Assumes the subscription is funded sufficiently; \"Words\" refers to unit of data in Computer Science"
+      }
+    },
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 898,
+        "contract": "contracts/RandomNumberConsumerV2.sol:RandomNumberConsumerV2",
+        "label": "s_randomWords",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_array(t_uint256)dyn_storage"
+      },
+      {
+        "astId": 900,
+        "contract": "contracts/RandomNumberConsumerV2.sol:RandomNumberConsumerV2",
+        "label": "s_requestId",
+        "offset": 0,
+        "slot": "1",
+        "type": "t_uint256"
+      },
+      {
+        "astId": 902,
+        "contract": "contracts/RandomNumberConsumerV2.sol:RandomNumberConsumerV2",
+        "label": "s_owner",
+        "offset": 0,
+        "slot": "2",
+        "type": "t_address"
+      }
+    ],
+    "types": {
+      "t_address": {
+        "encoding": "inplace",
+        "label": "address",
+        "numberOfBytes": "20"
+      },
+      "t_array(t_uint256)dyn_storage": {
+        "base": "t_uint256",
+        "encoding": "dynamic_array",
+        "label": "uint256[]",
+        "numberOfBytes": "32"
+      },
+      "t_uint256": {
+        "encoding": "inplace",
+        "label": "uint256",
+        "numberOfBytes": "32"
+      }
+    }
+  }
+}

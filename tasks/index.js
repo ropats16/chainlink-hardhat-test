@@ -1,0 +1,1 @@
+exports.randomNumberConsumer = require("./random-number-consumer")
